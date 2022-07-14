@@ -110,6 +110,7 @@ a input {
 .btn {
     margin-top: 25px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 .btn button{
@@ -147,11 +148,13 @@ a input {
     display: inline-block;
     padding-left: 30px;
 }
-@media screen and (max-width: 550px){
+@media(max-width: 550px){
     input::placeholder {font-size:10px;}
     .btn button{padding: 5px 10px;}
     span{font-size: 12px;}
     .radio + .radio{
         margin-left: 5px;
     }
+    .radio-group{flex-wrap: wrap;}
+    .radio{margin-bottom: 10px;}
 }
